@@ -14,12 +14,26 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         body: SafeArea(
-          child: Text(
-            'This is fonts Family.',
-            style: TextStyle(
-              fontSize: 50,
-              fontFamily: 'Pacifico',
-              color: Colors.amber,
+          child: Center(
+            child: Column(
+              children: [
+                 Text(
+                  'Login',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontFamily: 'Rubik-Medium',
+                    color: Color(0xff2D3142)
+                    ),
+                  ),
+                  Text(
+                  'Lorem ipsum dolar sit amet, \nconsectetur adipiscing elit',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontFamily: 'Rubik-Medium',
+                    color: Color(0xff4C5980)
+                    ),
+                  ),
+              ],
             ),
           ),
         ),
