@@ -17,6 +17,40 @@ class MyApp extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Image(
+                      width: 50,
+                      height: 50,
+                      image: AssetImage('images/logo.png'),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      children: [
+                      Text(
+                      'Maintance',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontFamily: 'Rubik-Medium',
+                        color: Color(0xff2D3142),
+                      ),
+                      ),
+                      Text(
+                        'Box',
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontFamily: 'Rubik-Medium',
+                          color: Colors.deepOrange,
+                        ),
+                      ),
+                      ],
+                    ),
+                  ],
+                ),
                  Text(
                   'Login',
                   style: TextStyle(
@@ -25,10 +59,13 @@ class MyApp extends StatelessWidget {
                     color: Color(0xff2D3142)
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                   'Lorem ipsum dolar sit amet, \nconsectetur adipiscing elit',
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 16,
                     fontFamily: 'Rubik-Medium',
                     color: Color(0xff4C5980)
                     ),
